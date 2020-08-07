@@ -1,3 +1,5 @@
+###This project seeks to find relevant answers to the questions posed on the bikeshare data
+
 
 ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
