@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+Created on 7th August, 2020.
 
 ### Project Title
-Replace the Project Title
+Explore Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This project uses R to analyse the bikeshare data and answer some interesting questions concerning the data
 
 ### Files used
-Include the files used
+Chicago, New York and Washington bike data
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Repo's that inspired this work
+
+"https://github.com/udacity/pdsnd_github.git"
 
