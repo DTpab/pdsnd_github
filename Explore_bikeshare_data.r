@@ -4,10 +4,12 @@ wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
 head(ny)
-
 head(wash)
-
 head(chi)
+
+tail(ny)
+tail(wash)
+tail(chi)
 
 ##Loading relevant r-packages
 library(magrittr)
