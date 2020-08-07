@@ -9,6 +9,7 @@ This project uses R to analyse the bikeshare data and answer some interesting qu
 
 ### Files used
 Chicago, New York and Washington bike data
+The file are in the format 'csv'
 
 ### Credits
 Repo's that inspired this work

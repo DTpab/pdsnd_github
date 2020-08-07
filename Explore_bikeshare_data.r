@@ -9,7 +9,7 @@ head(wash)
 
 head(chi)
 
-##Loading relevant r-packages
+##Loading relevant R-packages
 library(magrittr)
 library(dplyr)
 
@@ -46,7 +46,7 @@ pie(slices,labels = lbls, col=rainbow(length(lbls)),
 ##Reading the Chicago bikeshare data
 chi = read.csv('chicago.csv')
 
-##Loading relevant r-packages
+##Loading relevant R-packages
 library(magrittr)
 library(dplyr)
 
@@ -95,7 +95,7 @@ pie(slices,labels = lbls, col=rainbow(length(lbls)),
 legend("topright",legend=lbls, col=rainbow(length(lbls)),fill=rainbow(length(lbls)))
 
 
-##Loading relevant r-packages
+##Loading relevant R-packages
 library(magrittr)
 library(dplyr)
 
