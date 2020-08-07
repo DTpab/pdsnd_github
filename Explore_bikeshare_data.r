@@ -5,10 +5,9 @@ ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
+##Inspecting the data
 head(ny)
-
 head(wash)
-
 head(chi)
 
 ##Loading relevant R-packages
@@ -16,7 +15,7 @@ library(magrittr)
 library(dplyr)
 
 ##Finding the gender with the most rides
-highest.rider.ny = ny %>% group_by(Gender) %>% summarise(Total.Trip.Duration = sum(Trip.Duration) )  
+highest.rider.ny = ny %>% group_by(Gender) %>% summarise(Total.Trip.Duration = sum(Trip.Duration) )
 highest.rider.ny
 
 ##Ploting a Pie Chart for the representation
@@ -34,7 +33,7 @@ library(magrittr)
 library(dplyr)
 
 ##Finding the gender which spends the most riding time
-average.travel.ny = ny %>% group_by(Gender) %>% summarise(Total.Trip.Duration = mean(Trip.Duration) )  
+average.travel.ny = ny %>% group_by(Gender) %>% summarise(Total.Trip.Duration = mean(Trip.Duration) )
 average.travel.ny
 
 ##Ploting a Pie Chart for the representation
@@ -73,9 +72,9 @@ library(dplyr)
 ##Finding the percentage of the top three start points and the rest out of the total data
 total = nrow(chi)
 numbik = c(210,140,120,total-(210+140+120))
-    
 
-    ##Using a function to find the percentage 
+
+    ##Using a function to find the percentage
     numbik_to_percent = function(temp_N) {
       temp_P = (temp_N/total)*100
       return(temp_P)
@@ -104,7 +103,7 @@ library(dplyr)
 
 
 ##Finding the user with the average ride per User Type
-low.rides.wash = wash %>% group_by(User.Type) %>% summarise(Total.Trip.Duration = mean(Trip.Duration) )  
+low.rides.wash = wash %>% group_by(User.Type) %>% summarise(Total.Trip.Duration = mean(Trip.Duration) )
 low.rides.wash
 
 ##Plotting a Bar Graph
@@ -112,5 +111,5 @@ numbik=c(2635,736)
 barplot(numbik, main = "Total Ride Time of User Types", xlab = "User Type", ylab = "Total Time",las=1,names.arg = c("Customer","Subscriber") )
 
 
-
+##Submitting the project for review
 system('python -m nbconvert Explore_bikeshare_data.ipynb')
